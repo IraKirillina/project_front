@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Anton&family=Open+Sans:ital,wght@0,300;0,600;1,300&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<h2>Актуальные предложения</h2>
+
+
+
+
+
+
+
+
+<nav class="nav2">
+   <div class="navbar2">
+      <a class="navBar2" href="akt_mini1.html" target="minipage">Samsung</a>
+      <a class="navBar2" href="akt_mini2.html" target="minipage">Apple</a>
+      <a class="navBar2" href="akt_mini3.html" target="minipage">Huawei</a>
+   </div>
+</nav>
+
+<div class="frame2">
+   <iframe name="minipage" src="frame_mini.html" frameborder="0">
+
+   </iframe>
+
+</div>
+
+
+
+
+<script>
+   
+
+
+
+
+
+
+   // Get the modal
+   //var modal = ;
+
+   // Get the button that opens the modal
+   var btn = document.getElementById("myBtn");
+
+   // Get the <span> element that closes the modal
+   var spans = document.getElementsByClassName("close");
+
+   // When the user clicks the button, open the modal 
+   function openmodal(card_element_id) {
+      document.getElementById(card_element_id).style.display = "block";
+   }
+
+   var closeall = () => {
+      var modals = document.getElementsByClassName("modal");
+      for (var i = 0; i < modals.length; i++) {
+         var modal = modals[i];
+
+         modal.style.display = "none";
+      }
+
+   };
+   // When the user clicks on <span> (x), close the modal
+   for (var i = 0; i < spans.length; i++) {
+      var span = spans[i];
+      span.onclick = () => {
+         closeall();
+      };
+   }
+</script>
